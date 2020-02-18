@@ -10,20 +10,21 @@
 
 主要进行模型超参数以及相关文件路径的配置
 
-**2.DataProcessing.py 预处理文件
+**2.DataProcessing.py 预处理文件**
 
 主要进行语料库的处理工作，包括语料处理、编码索引、生成语料库的词向量文件emb等。
 
 **3.read_vecor.py 修改词向量文件**
 
 主要加入了  
-PAD = '<PAD>'  # 填充
 
-UNK = '<UNK>'  # 未知
+PAD = '</PAD>'  # 填充
 
-START = '<SOS>'
+UNK = '</UNK>'  # 未知
 
-END = '<EOS>'
+START = '</SOS>' # 开始
+
+END = '</EOS>'  # 结束
 
 这四个的词向量，随机生成（设置随机种子）。
 
@@ -33,7 +34,7 @@ END = '<EOS>'
 
 运算只需要运行此文件即可
 
-**6.RestfulAPI.py
+**6.RestfulAPI.py**
 
 运行此文件，然后打开index.html，即可进行人机对话。
 
