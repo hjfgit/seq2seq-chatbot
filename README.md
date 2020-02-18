@@ -18,7 +18,9 @@
 
 主要加入了  
 PAD = '<PAD>'  # 填充
+
 UNK = '<UNK>'  # 未知
+
 START = '<SOS>'
 
 END = '<EOS>'
