@@ -1,17 +1,12 @@
 
 # seq2seq-chatbot
-=======
-**先上效果图**
+### **先上效果图**
 
-![image](https://github.com/daniellibin/seq2seq-chatbot/tree/master/img/test.png)
+<img src="./img/test.png" style="zoom:67%;" />
 
+### 文件说明
 
-
-
-
-
-
-**1.config.py 参数配置文件**
+**1.config.py参数配置文件**
 
 主要进行模型超参数以及相关文件路径的配置
 
@@ -25,7 +20,9 @@
 PAD = '<PAD>'  # 填充
 UNK = '<UNK>'  # 未知
 START = '<SOS>'
+
 END = '<EOS>'
+
 这四个的词向量，随机生成（设置随机种子）。
 
 **4.SequenceToSequence.py Seq2Seq模型**
@@ -38,25 +35,13 @@ END = '<EOS>'
 
 运行此文件，然后打开index.html，即可进行人机对话。
 
-
-
-
-
-
-
-**模型文件及相关数据文件请参考百度网盘：**
+### **模型文件及相关数据文件请参考百度网盘：**
 
 链接：https://pan.baidu.com/s/1tIyCmAQbhwuhiY9bq-A5Sw 
 
 提取码：idvz
 
-
-
-
-
-
-
-**详细介绍请参考博客：**
+### **详细介绍请参考博客：**
 
 [1.基于seq2seq的中文聊天机器人（一）](https://blog.csdn.net/daniellibin/article/details/103290169)
 
