@@ -188,16 +188,17 @@ class DataUnit(object):
         self.index2word = dict([(i, w) for i, w in enumerate(index2word)])  # index2word ('1'，你)
 
     def emb_write(self):
-        word_vec = pickle.load(open(self.word_vec_path, 'rb'))
-        emb = np.zeros((len(self.word2index), len(word_vec['<SOS>'])))
-        np.random.seed(1)
-        for word, ind in self.word2index.items():
-            if word in word_vec:
-                emb[ind] = word_vec[word]
-            else:
-                emb[ind] = np.random.random(size=(300,)) - 0.5
+        if not os.path.exists(self.emb_path):
+            word_vec = pickle.load(open(self.word_vec_path, 'rb'))
+            emb = np.zeros((len(self.word2index), len(word_vec['<SOS>'])))
+            np.random.seed(1)
+            for word, ind in self.word2index.items():
+                if word in word_vec:
+                    emb[ind] = word_vec[word]
+                else:
+                    emb[ind] = np.random.random(size=(300,)) - 0.5
 
-        pickle.dump(emb,open(self.emb_path, 'wb'))
+            pickle.dump(emb,open(self.emb_path, 'wb'))
 
 
     def _regular_(self, sen):
