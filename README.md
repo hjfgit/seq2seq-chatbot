@@ -43,13 +43,3 @@ END = '</EOS>'  # 结束
 链接：https://pan.baidu.com/s/1tIyCmAQbhwuhiY9bq-A5Sw 
 
 提取码：idvz
-
-### **详细介绍请参考博客：**
-
-[1.基于seq2seq的中文聊天机器人（一）](https://blog.csdn.net/daniellibin/article/details/103290169)
-
-[2.基于seq2seq的中文聊天机器人（二）](https://blog.csdn.net/daniellibin/article/details/103290395)
-
-[3.基于seq2seq的中文聊天机器人（三）](https://blog.csdn.net/daniellibin/article/details/103290756)
-
-
